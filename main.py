@@ -28,7 +28,11 @@ class ResultsPage(MethodView):
         roommate1 = room.Roommate(billform.name1.data, float(billform.days_in_house1.data))
         roommate2 = room.Roommate(billform.name2.data, float(billform.days_in_house2.data))
 
-        return f"{roommate1.name} pays {roommate1.pays(the_bill, roommate2)}"
+        return render_template('results.html',
+                               name1=roommate1.name,
+                               amount1=roommate1.pays(the_bill, roommate2),
+                               name2=roommate2.name,
+                               amount2=roommate2.pays(the_bill, roommate1))
 
 
 class BillForm(Form):
