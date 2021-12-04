@@ -11,7 +11,7 @@ input[type=text] {
 }
 
 input[type=submit]{
-    width: 20%;
+    width: 10%;
     background-color: YellowGreen;
     color: White;
     padding: 12px 12px;
