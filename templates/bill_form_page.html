@@ -9,19 +9,31 @@
 <h2>The Bill Form</h2>
 <p>Fill in the form and click the button to get the results</p>
 <form action="/results" method="post">
-    {{billform.amount.label}} {{billform.amount}}
+    {{billform.amount.label}}
     <br>
-    {{billform.period.label}} {{billform.period}}
+    {{billform.amount}}
+    <br>
+    {{billform.period.label}}
+    <br>
+    {{billform.period}}
     <hr>
     <p>First Roommate</p>
-    {{billform.name1.label}} {{billform.name1}}
+    {{billform.name1.label}}
     <br>
-    {{billform.days_in_house1.label}} {{billform.days_in_house1}}
+    {{billform.name1}}
+    <br>
+    {{billform.days_in_house1.label}}
+    <br>
+    {{billform.days_in_house1}}
     <hr>
     <p>Second Roommate</p>
-    {{billform.name2.label}} {{billform.name2}}
+    {{billform.name2.label}}
     <br>
-    {{billform.days_in_house2.label}} {{billform.days_in_house2}}
+    {{billform.name2}}
+    <br>
+    {{billform.days_in_house2.label}}
+    <br>
+    {{billform.days_in_house2}}
     <br>
     {{billform.button}}
 </form>
