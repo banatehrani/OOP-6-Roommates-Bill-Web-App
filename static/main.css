@@ -5,13 +5,13 @@ h2 {
 }
 
 input[type=text] {
-    width: 15%;
+    width: 100%;
     padding: 8px 8px;
     margin: 10px 0;
 }
 
 input[type=submit]{
-    width: 10%;
+    width: 100%;
     background-color: YellowGreen;
     color: White;
     padding: 12px 12px;
